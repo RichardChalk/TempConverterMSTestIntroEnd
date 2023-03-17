@@ -9,10 +9,10 @@ namespace TempConverter.Tests
     [TestClass]
     public class ConvertTests
     {
-        private readonly Convert sut;
+        private readonly Convert _sut;
         public ConvertTests()
         {
-            sut = new Convert();
+            _sut = new Convert();
         }
 
         [TestMethod]
@@ -23,7 +23,7 @@ namespace TempConverter.Tests
             double c = 0;
 
             // Act
-            double result = sut.f2c(f);
+            double result = _sut.f2c(f);
 
             // Assert
             // (expected , received)
@@ -38,7 +38,7 @@ namespace TempConverter.Tests
             double f = 212;
 
             // Act
-            double result = sut.c2f(c);
+            double result = _sut.c2f(c);
 
             // Assert
             // (expected , received)
@@ -53,7 +53,7 @@ namespace TempConverter.Tests
             double c = -273.15;
 
             // Act
-            double result = sut.k2c(k);
+            double result = _sut.k2c(k);
 
             // Assert
             // (expected , received)
@@ -68,7 +68,7 @@ namespace TempConverter.Tests
             string tempText = "Kallt";
 
             // Act
-            string result = sut.c2Text(c);
+            string result = _sut.c2Text(c);
 
             // Assert
             // (expected , received)
@@ -83,7 +83,7 @@ namespace TempConverter.Tests
             string tempText = "Varmt";
 
             // Act
-            string result = sut.c2Text(c);
+            string result = _sut.c2Text(c);
 
             // Assert
             // (expected , received)
@@ -98,7 +98,7 @@ namespace TempConverter.Tests
             string tempText = "Hett";
 
             // Act
-            string result = sut.c2Text(c);
+            string result = _sut.c2Text(c);
 
             // Assert
             // (expected , received)
